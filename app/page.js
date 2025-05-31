@@ -1,102 +1,168 @@
+"use client";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+  const [show, setShow] = useState(false);
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
+  useEffect(() => {
+    setTimeout(() => setShow(true), 300);
+  }, []);
+
+  return (
+    <div className="font-sans text-blue-900 bg-white min-h-screen flex flex-col">
+      {/* Navbar */}
+      <nav className="flex justify-between items-center p-4 shadow-md sticky top-0 bg-white z-50">
+        <h1 className="text-2xl font-bold">شركة التضامن</h1>
+        <ul className="flex space-x-4 rtl:space-x-reverse">
+          <li>
+            <a href="#home" className="hover:text-blue-500 transition-colors duration-300">
+              الرئيسي
+            </a>
+          </li>
+          <li>
+            <a href="#about" className="hover:text-blue-500 transition-colors duration-300">
+              نبذة
+            </a>
+          </li>
+          <li>
+            <a href="#info" className="hover:text-blue-500 transition-colors duration-300">
+              معلومات
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      {/* Hero Section */}
+      <section
+        id="home"
+        className="flex flex-col items-center justify-center flex-grow h-screen text-center px-4"
+      >
+        <Image
+          src="/logo.jpg"
+          alt="Logo"
+          width={350}
+          height={350}
+          className={`transition-opacity duration-700 ${show ? "opacity-100" : "opacity-0"}`}
+        />
+        <p
+          className={`mt-4 text-lg max-w-md font-bold ${
+            show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
+          } transition-all duration-700`}
+        >
+          شركة التضامن لتجارة الحديد و المكائن
+        </p>
+        <p
+          className={`mt-2 text-lg max-w-md ${
+            show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
+          } transition-all duration-700`}
+        >
+          واحدة من أكبر الشركات في العراق في مجال الحديد
+        </p>
+        <div className="flex space-x-6 rtl:space-x-reverse mt-6 text-xl">
           <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            href="https://www.instagram.com/al_tadhamun_company/?igsh=dHVhZ2NjcWcwMjQ5"
             target="_blank"
             rel="noopener noreferrer"
+            className="hover:text-pink-500 transition-colors duration-300"
+            aria-label="Instagram"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
+            Instagram
           </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          {/* <a
+            href="https://www.facebook.com"
             target="_blank"
             rel="noopener noreferrer"
+            className="hover:text-blue-600 transition-colors duration-300"
+            aria-label="Facebook"
           >
-            Read our docs
-          </a>
+            📘
+          </a> */}
+          {/* <a
+            href="https://wa.me/07801016433"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-green-500 transition-colors duration-300"
+            aria-label="WhatsApp"
+          >
+            💬
+          </a> */}
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+      </section>
+
+      {/* Cards Section */}
+      <section id="about" className="py-12 bg-blue-50 px-4">
+        <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {[
+            { src: "/1.jpg", title: "مكائن لحام" },
+            { src: "/2.jpg", title: "مكائن تشريح وتقطيع" },
+            { src: "/3.jpg", title: "شاحنات" },
+            { src: "/4.jpg", title: " BLAK STEEL PIPE" },
+            { src: "/5.jpg", title: " H BEAM" },
+            { src: "/6.jpg", title: " I BEAM" },
+            { src: "/7.jpg", title: "HOT ROLLED STEEL" },
+            { src: "/8.jpg", title: "DIPPED GALVANISED STEEL " },
+            { src: "/9.jpg", title: "HOT ROLLED STEEL SHEETS plate" },
+            { src: "/10.jpg", title: "ANGLE STEEL" },
+            { src: "/11.jpg", title: "CHANNELS STEEL " },
+          ].map(({ src, title }, idx) => (
+            <div
+              key={idx}
+              className="bg-white p-4 rounded-xl shadow-md hover:scale-105 transition-transform duration-300 flex flex-col"
+            >
+              <div className="w-full h-48 overflow-hidden rounded-md">
+                <Image
+                  src={src}
+                  alt={title}
+                  width={280}
+                  height={192} // تقريبا نسبة 16:11
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h3 className="text-center text-lg font-semibold mt-auto pt-4">{title}</h3>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer
+        id="info"
+        className="bg-blue-900 text-white py-8 text-center space-y-3 px-4"
+      >
+        <h3 className="text-xl font-semibold">AL-TADHAMUN FOR IRON TRADE LTD</h3>
+        <p>المدير المفوض : حسن فالح حسين</p>
+        <p>رقم الهاتف: 07801016433</p>
+        <p>سنة التأسيس 2022</p>
+        <div className="flex justify-center space-x-6 rtl:space-x-reverse text-2xl">
+          <a
+            href="https://www.instagram.com/al_tadhamun_company/?igsh=dHVhZ2NjcWcwMjQ5"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-pink-300 transition-colors duration-300"
+            aria-label="Instagram"
+          >
+            Instagram
+          </a>
+          {/* <a
+            href="https://www.facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-blue-300 transition-colors duration-300"
+            aria-label="Facebook"
+          >
+            📘
+          </a>
+          <a
+            href="https://wa.me/07801016433"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-green-300 transition-colors duration-300"
+            aria-label="WhatsApp"
+          >
+            💬
+          </a> */}
+        </div>
       </footer>
     </div>
   );
