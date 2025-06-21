@@ -44,9 +44,9 @@ export default function Home() {
           <p className="text-lg font-bold mb-2">
 Khairat Al-Jenan General Trading Company LLC
           </p>
-          <p className="text-md mb-4">
+          {/* <p className="text-md mb-4">
             واحدة من أكبر الشركات في العراق في مجال الحديد
-          </p>
+          </p> */}
           {/* <a
             href="https://www.instagram.com/al_tadhamun_company/?igsh=dHVhZ2NjcWcwMjQ5"
             target="_blank"
