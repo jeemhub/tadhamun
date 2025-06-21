@@ -42,7 +42,7 @@ export default function Home() {
 شركة خيرات الجنان للتجاره العامه محدودة المسؤولية   
           </p>
           <p className="text-lg font-bold mb-2">
-Khairat Al-Jenan General Trading Company LLC
+Khairat Al-Jinan General Trading Company LTD
           </p>
           {/* <p className="text-md mb-4">
             واحدة من أكبر الشركات في العراق في مجال الحديد
@@ -100,9 +100,10 @@ Khairat Al-Jenan General Trading Company LLC
         id="info"
         className="bg-blue-900 text-white py-8 text-center space-y-3 px-4"
       >
-        <h3 className="text-xl font-semibold">Khairat Al-Jenan FOR IRON TRADE LTD</h3>
+        <h3 className="text-xl font-semibold">Khairat Al-Jinan FOR IRON TRADE LTD</h3>
         {/* <p>altadhamincompany@gmail.com</p> */}
         <p>رقم الهاتف: 07801016433</p>
+        <p>khairataljinan@gmail.com</p>
         <p>سنة التأسيس 2024</p>
         <div className="flex justify-center space-x-6 rtl:space-x-reverse text-2xl">
           {/* <a
