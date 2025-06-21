@@ -12,7 +12,7 @@ export default function Home() {
     <div className="font-sans text-blue-900 bg-white min-h-screen flex flex-col">
       {/* Navbar */}
       <nav className="flex justify-between items-center p-4 shadow-md sticky top-0 bg-white z-50">
-        <h1 className="text-2xl font-bold">Al-Tadamun</h1>
+        <h1 className="text-2xl font-bold">Khairat Al-Jenan</h1>
         <ul className="flex space-x-4 rtl:space-x-reverse">
           <li><a href="#home" className="hover:text-blue-500">الرئيسي</a></li>
           <li><a href="#about" className="hover:text-blue-500">نبذة</a></li>
@@ -42,19 +42,19 @@ export default function Home() {
             شركة التضامن لتجارة الحديد و المكائن
           </p>
           <p className="text-lg font-bold mb-2">
-            Al-Tadamun Company for Iron and Machinery Trading
+            Khairat Al-Jenan Company for Iron and Machinery Trading
           </p>
           <p className="text-md mb-4">
             واحدة من أكبر الشركات في العراق في مجال الحديد
           </p>
-          <a
+          {/* <a
             href="https://www.instagram.com/al_tadhamun_company/?igsh=dHVhZ2NjcWcwMjQ5"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-800 hover:text-pink-500 transition-colors"
           >
             Instagram
-          </a>
+          </a> */}
         </div>
       </section>
 
@@ -100,19 +100,19 @@ export default function Home() {
         id="info"
         className="bg-blue-900 text-white py-8 text-center space-y-3 px-4"
       >
-        <h3 className="text-xl font-semibold">AL-TADHAMUN FOR IRON TRADE LTD</h3>
-        <p>altadhamincompany@gmail.com</p>
+        <h3 className="text-xl font-semibold">Khairat Al-Jenan FOR IRON TRADE LTD</h3>
+        {/* <p>altadhamincompany@gmail.com</p> */}
         <p>رقم الهاتف: 07801016433</p>
         <p>سنة التأسيس 2022</p>
         <div className="flex justify-center space-x-6 rtl:space-x-reverse text-2xl">
-          <a
+          {/* <a
             href="https://www.instagram.com/al_tadhamun_company/?igsh=dHVhZ2NjcWcwMjQ5"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-pink-300 transition-colors duration-300"
           >
             Instagram
-          </a>
+          </a> */}
         </div>
       </footer>
     </div>
