@@ -12,7 +12,7 @@ export default function Home() {
     <div className="font-sans text-blue-900 bg-white min-h-screen flex flex-col">
       {/* Navbar */}
       <nav className="flex justify-between items-center p-4 shadow-md sticky top-0 bg-white z-50">
-        <h1 className="text-2xl font-bold">Khairat Al-Jenan</h1>
+        <h1 className="text-2xl font-bold">Khairat Al-Jinan</h1>
         <ul className="flex space-x-4 rtl:space-x-reverse">
           <li><a href="#home" className="hover:text-blue-500">الرئيسي</a></li>
           <li><a href="#about" className="hover:text-blue-500">نبذة</a></li>
