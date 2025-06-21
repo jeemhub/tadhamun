@@ -100,7 +100,7 @@ Khairat Al-Jinan General Trading Company LTD
         id="info"
         className="bg-blue-900 text-white py-8 text-center space-y-3 px-4"
       >
-        <h3 className="text-xl font-semibold">Khairat Al-Jinan FOR IRON TRADE LTD</h3>
+        {/* <h3 className="text-xl font-semibold">Khairat Al-Jinan FOR IRON TRADE LTD</h3> */}
         {/* <p>altadhamincompany@gmail.com</p> */}
         <p>رقم الهاتف: 07801016433</p>
         <p>khairataljinan@gmail.com</p>
