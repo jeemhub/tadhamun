@@ -39,10 +39,10 @@ export default function Home() {
           }}
         >
           <p className="text-lg font-bold mb-2">
-            شركة خيرات الجنان لتجارة الحديد و المكائن
+شركة خيرات الجنان للتجاره العامه محدودة المسؤولية   
           </p>
           <p className="text-lg font-bold mb-2">
-            Khairat Al-Jenan Company for Iron and Machinery Trading
+Khairat Al-Jenan General Trading Company LLC
           </p>
           <p className="text-md mb-4">
             واحدة من أكبر الشركات في العراق في مجال الحديد
@@ -103,7 +103,7 @@ export default function Home() {
         <h3 className="text-xl font-semibold">Khairat Al-Jenan FOR IRON TRADE LTD</h3>
         {/* <p>altadhamincompany@gmail.com</p> */}
         <p>رقم الهاتف: 07801016433</p>
-        <p>سنة التأسيس 2022</p>
+        <p>سنة التأسيس 2024</p>
         <div className="flex justify-center space-x-6 rtl:space-x-reverse text-2xl">
           {/* <a
             href="https://www.instagram.com/al_tadhamun_company/?igsh=dHVhZ2NjcWcwMjQ5"
