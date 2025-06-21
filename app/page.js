@@ -39,7 +39,7 @@ export default function Home() {
           }}
         >
           <p className="text-lg font-bold mb-2">
-            شركة التضامن لتجارة الحديد و المكائن
+            شركة خيرات الجنان لتجارة الحديد و المكائن
           </p>
           <p className="text-lg font-bold mb-2">
             Khairat Al-Jenan Company for Iron and Machinery Trading
